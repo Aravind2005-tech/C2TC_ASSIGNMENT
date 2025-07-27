@@ -2,8 +2,7 @@ package ScannerDemo;
 import java.util.*;
 public class PersonDemo {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner ob = new Scanner(System.in);
+try (Scanner ob = new Scanner(System.in)) {
 		
 		String name;
 		System.out.println("Enter Person Name : ");
@@ -30,6 +29,6 @@ Scanner ob = new Scanner(System.in);
 		System.out.println("After calculating tax : ");
 		System.out.println(person);
 
-		ob.close();
+	}
 	}
 }
