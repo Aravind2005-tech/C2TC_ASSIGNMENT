@@ -1,13 +1,13 @@
 package ACTIVITY;
 
-import java.util.Scanner; // ✅ Import Scanner class
+import java.util.Scanner; 
 
 public class ACTIVITY {
 
     public static void main(String args[]) {
-        Scanner scan = new Scanner(System.in); // ✅ Correct variable name
+        Scanner scan = new Scanner(System.in); 
         System.out.println("Enter your name:");
-        String n = scan.nextLine(); // ✅ Use the correct Scanner object
+        String n = scan.nextLine(); 
         System.out.println("Hello " + n);
         scan.close();
     }
