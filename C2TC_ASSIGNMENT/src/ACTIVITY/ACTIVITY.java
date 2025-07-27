@@ -9,5 +9,6 @@ public class ACTIVITY {
         System.out.println("Enter your name:");
         String n = scan.nextLine(); // ✅ Use the correct Scanner object
         System.out.println("Hello " + n);
+        scan.close();
     }
 }
