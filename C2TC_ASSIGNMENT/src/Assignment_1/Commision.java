@@ -8,18 +8,23 @@ public class Commision {
 	String phone;
 	int sales;
 	public void acceptDetails() {
-		Scanner sc=new Scanner(System.in);
+		try(Scanner sc=new Scanner(System.in)){
 		System.out.println("Enter the Name:");
 		name=sc.nextLine();
 		
-		System.out.println("Enter the address:");
+		
+      System.out.println("Address: " + address);
+
 		address=sc.nextLine();
 		
 		System.out.println("Enter the Phone:");
 		phone=sc.nextLine();
+		System.out.println("Phone: " + phone);
 		
 		System.out.println("Enter the Salary:");
 		sales=sc.nextInt();
+		sc.close();
+		}
 		
 	}
 	public void ComisionDetails() {
